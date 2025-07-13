@@ -11,6 +11,7 @@ const ThemeSwitcher = () => {
   const [mounted, setMounted] = useState(false)
   useEffect(() => {
     setMounted(true)
+    setTheme('light')
   }, [])
   const handleChangeTheme = useCallback(() => {
     setTheme(theme === 'dark' ? 'light' : 'dark')
